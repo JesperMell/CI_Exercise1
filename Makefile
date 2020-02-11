@@ -13,7 +13,7 @@ BUILD = build
 
 SRC = $(shell find . -name '*.c')
 OBJ = $(SRC:./%.c=$(BUILD)/%.o)
-TARGET_BINARY = $(BUILD)/$(BINARY)
+	TARGET_BINARY = $(BUILD)/$(BINARY)
 
 #########
 # Rules #
@@ -38,4 +38,4 @@ build/%.o: %.c
 
 check: $(TARGET_BINARY)
 	@# Execute binary and verify output, it returns 0 (success) or 1 (fail)
-	[ "$$($(TARGET_BINARY))" = "Hello World"]
+	[ "$$($(TARGET_BINARY))" = "Hello world!" ]
