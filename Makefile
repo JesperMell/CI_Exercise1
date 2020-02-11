@@ -38,4 +38,4 @@ build/%.o: %.c
 
 check: $(TARGET_BINARY)
 	@# Execute binary and verify output, it returns 0 (success) or 1 (fail)
-	[ "$$($(TARGET_BINARY))" = "Hello wooorld!" ]
+	[ "$$($(TARGET_BINARY))" = "Hello world!" ]
